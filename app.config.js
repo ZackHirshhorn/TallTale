@@ -1,5 +1,9 @@
-{
-  "expo": {
+// app.config.js
+import 'dotenv/config';
+
+
+export default {
+  expo: {
     "name": "talltale",
     "slug": "talltale",
     "version": "1.0.0",
@@ -38,6 +42,11 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
-  }
-}
+    },
+    extra: {
+      unsplashAccessKey: process.env.UNSPLASH_ACCESS_KEY,
+    },
+  },
+};
+
+
